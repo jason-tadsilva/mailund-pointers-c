@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-union data
+struct data
 {
     char c;
     int i;
@@ -13,7 +13,7 @@ union data
 int main(void)
 {
 
-    union data data;
+    struct data data;
     printf("sizeof(data) = %zu\n", sizeof data);
     printf("max size of components = %zu\n", 
     MAX3(sizeof data.c, sizeof data.i, sizeof data.d));
