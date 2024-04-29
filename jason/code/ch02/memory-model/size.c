@@ -11,11 +11,16 @@ int main(void)
     int i;
     printf("%zu %zu\n", sizeof(int), sizeof i);
 
-    int* ptr_i;
-    printf("%zu %zu\n", sizeof(int*), sizeof ptr_i);
-
     double d;
     printf("%zu %zu\n", sizeof(double), sizeof d);
+
+    char *ptr = "123456789";
+    char str[10] = "12345";
+    int numbers[10];
+
+    printf("sizeof(ptr) = %zu\n", sizeof ptr);
+    printf("sizeof(str) = %zu\n", sizeof str);
+    printf("sizeof(numbers) = %zu\n", sizeof numbers);
 
     return 0;
 }
